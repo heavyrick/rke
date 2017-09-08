@@ -5,8 +5,6 @@ CREATE TABLE books(
   publisher VARCHAR(200) NOT NULL,
   year INT(4),
   isbn VARCHAR(50) UNIQUE,
-  cover VARCHAR(100),
-  price DECIMAL(10,2),
   status TINYINT(1) DEFAULT 1,
   created_at TIMESTAMP NULL DEFAULT NULL,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

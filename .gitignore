@@ -1,5 +1,2 @@
 /node_modules
-/laravelfiles/storage
 /laravelfiles/vendor
-/.idea
-laravelfiles/.env

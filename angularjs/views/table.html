@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<md-card>
+    <md-card-content>
+        <md-button class="md-raised md-primary" ui-sref="add">
+            <md-icon class="material-icons">add</md-icon> New Book
+        </md-button>
+    </md-card-content>
+</md-card>
 
-</body>
-</html>
+<md-card>
+    <md-card-content>
+        <md-table-container>
+            <table md-table>
+                <thead md-head>
+                    <tr md-row>
+                        <th md-column>Títle</th>
+                        <th md-column>Author</th>
+                        <th md-column>Year</th>
+                        <th md-column>Publisher</th>
+                        <th md-column>ISBN</th>
+                        <th md-column></th>
+                        <th md-column></th>
+                    </tr>
+                </thead>
+                <tbody md-body>
+                    <tr md-row ng-repeat="row in ctrl.rows">
+                        <td md-cell>{{row.title}}</td>
+                        <td md-cell>{{row.author}}</td>
+                        <td md-cell>{{row.year}}</td>
+                        <td md-cell>{{row.publisher}}</td>
+                        <td md-cell>{{row.isbn}}</td>
+                        <td md-cell>
+                            <md-button type="button" ui-sref="edit({id: {{row.id}}})" class="md-raised md-fab md-mini md-primary">
+                                <md-icon class="material-icons">edit</md-icon>
+                            </md-button>
+                        </td>
+                        <td md-cell>
+                            <md-button type="button" ng-click="ctrl.delete(row.id)" class="md-raised md-fab md-mini md-warn">
+                                <md-icon class="material-icons">delete</md-icon>
+                            </md-button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+    </md-card-content>
+</md-card>

@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heavyrick/uk.git"
+    "url": "git+https://github.com/heavyrick/rke.git"
   },
   "keywords": [
     "library"
@@ -34,12 +34,13 @@
   "bugs": {
     "url": "https://github.com/heavyrick/uk/issues"
   },
-  "homepage": "https://github.com/heavyrick/uk#readme",
+  "homepage": "https://github.com/heavyrick/rke#readme",
   "dependencies": {
     "angular": "^1.6.6",
     "angular-animate": "^1.6.6",
     "angular-aria": "^1.6.6",
     "angular-material": "^1.1.4",
+    "angular-material-data-table": "^0.10.10",
     "angular-messages": "^1.6.6",
     "angular-ui-router": "^1.0.3"
   }

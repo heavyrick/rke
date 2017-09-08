@@ -7,20 +7,42 @@ angular.module('app').config([
         $stateProvider
 
         // MAIN
-        .state('/', {
+        .state('home', {
             url: '/',
-            templateUrl: './angularjs/views/main.html'
+                views: {
+                    '': {
+                        templateUrl: './angularjs/views/main.html'
+                    },
+                    'main@home': {
+                        templateUrl: './angularjs/views/table.html'
+                    }
+                }
         })
 
-        // FORM
+        // ADD
         .state('add', {
             url: '/add',
-            templateUrl: './angularjs/views/form.html'
+            views: {
+                '': {
+                    templateUrl: './angularjs/views/main.html'
+                },
+                'main@add': {
+                    templateUrl: './angularjs/views/form.html'
+                }
+            }
         })
 
+        // EDIT
         .state('edit', {
             url: '/edit/:id',
-            templateUrl: './angularjs/views/form.html'
+            views: {
+                '': {
+                    templateUrl: './angularjs/views/main.html'
+                },
+                'main@edit': {
+                    templateUrl: './angularjs/views/form.html'
+                }
+            }
         })
 
         $urlRouterProvider.otherwise('/');

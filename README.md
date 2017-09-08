@@ -17,13 +17,23 @@ https://github.com/heavyrick/rke
 NPM
 https://www.npmjs.com
 
-composer create-project --prefer-dist laravel/laravel rke "5.3.*"
+Composer 
+https://getcomposer.org/
 
-npm libraries:
+To run this project i'm assuming that git, npm and composer are already installed in the system.
 
-npm install angular
-npm install angular-material
-npm install angular-ui-router
-npm install angular-animate
-npm install angular-aria
-npm install angular-messages
+(I'm using xampp to run this project locally, in this path c:/xampp/htdocs)
+
+Open a terminal session and execute the following commands:
+
+$ git clone https://github.com/heavyrick/rke.git
+$ cd rke
+$ npm update
+$ cd laravelfiles
+$ composer update
+
+# Database #
+
+Create the MySQL database: rke_library (already configured in the .env file)
+
+$ php artisan migrate

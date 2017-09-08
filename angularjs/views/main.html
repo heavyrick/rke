@@ -1,5 +1,10 @@
-<p>?????</p>
-
-<ul class="nav navbar-nav">
-    <li><a ui-sref="add">New</a></li>
-</ul>
+<section layout-fill ng-controller="MainController as ctrl" ng-cloak>
+    <md-content>
+        <md-toolbar class="md-hue-2" layout-align="start start">
+            <div class="md-toolbar-tools">
+                <md-header> <md-icon md-font-set="material-icons">local_library</md-icon> Simple Library</md-header>
+            </div>
+        </md-toolbar>
+        <div ui-view="main"></div>
+    </md-content>
+</section>
