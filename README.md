@@ -1,6 +1,6 @@
 # rke
 
-Simple Library Project using Laravel 5.3, AngulaJS and Angular Material
+Simple Library Project using Laravel 5.3, AngularJS and Angular Material
 
 Laravel
 https://laravel.com/docs/5.3
@@ -20,6 +20,8 @@ https://www.npmjs.com
 Composer 
 https://getcomposer.org/
 
+# Install
+
 To run this project i'm assuming that git, npm and composer are already installed in the system.
 
 (I'm using xampp to run this project locally, in this path c:/xampp/htdocs)
@@ -27,13 +29,19 @@ To run this project i'm assuming that git, npm and composer are already installe
 Open a terminal session and execute the following commands:
 
 $ git clone https://github.com/heavyrick/rke.git
+
 $ cd rke
+
 $ npm update
+
 $ cd laravelfiles
+
 $ composer update
 
 # Database #
 
-Create the MySQL database: rke_library (already configured in the .env file)
+Create the MySQL database: rke_library (already configured in .env file) and run the command:
+
+$ cd laravelfiles
 
 $ php artisan migrate
